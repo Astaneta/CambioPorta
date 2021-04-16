@@ -8,23 +8,29 @@ namespace CambioPorta
         {
             int victory = 0;
             int lose = 0;
-            for (int i = 0; i < 1000; i++)
+            int turns = 100;
+            for (int i = 0; i < turns; i++)
             {
                 short choosedDoor = ChoosingDoor.ChoosedDoor();
-                short winningDoor = WinnderDoor.WinnDoor();
+                short winningDoor = WinneerDoor.WinnDoor();
+                ChangeDoor.changingDoor(ref choosedDoor, winningDoor);
                 if (choosedDoor == winningDoor)
                 {
                     victory++;
-                    //Console.WriteLine("È stata scelta la porta giusta"); //TODO cancellare questo writeline di debug
+                    Console.WriteLine("Hai vinto");
+                    Console.WriteLine();
                 }
                 else
                 {
                     lose++;
-                    //Console.WriteLine("È stata scelta la porta sbagliata"); //TODO cancellare questo writeline di debug
+                    Console.WriteLine("Hai perso");
+                    Console.WriteLine();
                 }
             }
             Console.WriteLine($"Il numero di vittorie è: {victory}");
-            Console.WriteLine($"La percentuale di vittoria dopo 1000 turni è: {(victory*100)/1000}%"); 
+            Console.WriteLine($"La percentuale di vittoria dopo {turns} turni è: {(victory*100)/turns}%"); 
+
+            
         }
     }
 }

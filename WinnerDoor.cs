@@ -2,7 +2,7 @@ using System;
 
 namespace CambioPorta
 {
-    public abstract class WinnderDoor
+    public abstract class WinneerDoor
     {
         // Il seguente metodo si limita a restituire un numero random da 1 a 3
         public static short WinnDoor()
