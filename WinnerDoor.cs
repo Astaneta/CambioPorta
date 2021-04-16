@@ -4,7 +4,7 @@ namespace CambioPorta
 {
     public abstract class WinneerDoor
     {
-        // Il seguente metodo si limita a restituire un numero random da 1 a 3
+        // Following method just return a random number from 1 to 3
         public static short WinnDoor()
         {
             Random random = new Random();

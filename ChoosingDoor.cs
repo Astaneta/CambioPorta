@@ -2,10 +2,9 @@ using System;
 
 namespace CambioPorta
 {
-
-    //Questa classe genera una scelta casuale di una delle tre porte, simulando la scelta di un utente;
     public abstract class ChoosingDoor 
     {
+        // This method just return a number between 1 and 3, simulating the choose of a door
         public static short ChoosedDoor()
         {
             Random random = new Random();
