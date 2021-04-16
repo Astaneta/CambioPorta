@@ -8,7 +8,7 @@ namespace CambioPorta
         {
             int victoryWithChange = 0;
             int victoryWithoutChange = 0;
-            int turns = 50000;
+            int turns = 100000;
 
             // Turni non cambiando porta
             for (int i = 0; i < turns; i++)
