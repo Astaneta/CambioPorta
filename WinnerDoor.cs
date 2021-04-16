@@ -1,20 +1,17 @@
 using System;
 
 namespace CambioPorta
-
 {
     public abstract class WinnderDoor
     {
-        public int WinningDoor { get; set; }
-
         // Il seguente metodo si limita a restituire un numero random da 1 a 3
-        public static int WinnDoor()
+        public static short WinnDoor()
         {
             Random random = new Random();
 
-            int winner = random.Next(1, 4);
+            short winner = Convert.ToInt16(random.Next(1, 4));
 
-            Console.WriteLine("La porta vincente è: {0}", winner);
+            //Console.WriteLine("La porta vincente è: {0}", winner); //TODO cancellare questo writeline di debug
 
             return winner;
         }
